@@ -1,9 +1,9 @@
-Building Litecoin
+Building Testcoin
 
-See doc/readme-qt.rst for instructions on building Litecoin-Qt,
+See doc/readme-qt.rst for instructions on building Testcoin-Qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of Litecoin.
+implementation of Testcoin.
 
-See doc/build-*.txt for instructions on building litecoind,
+See doc/build-*.txt for instructions on building testcoind,
 the intended-for-services, no-graphical-interface, reference
-implementation of Litecoin.
+implementation of Testcoin.

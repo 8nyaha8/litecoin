@@ -3,7 +3,7 @@
 <plist version="0.9">
 <dict>
 	<key>CFBundleIconFile</key>
-	<string>litecoin.icns</string>
+	<string>testcoin.icns</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
@@ -15,19 +15,19 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>Litecoin-Qt</string>
+	<string>Testcoin-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.litecoin.Litecoin-Qt</string>
+	<string>org.testcoin.Testcoin-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>org.litecoin.LitecoinPayment</string>
+            <string>org.testcoin.TestcoinPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>litecoin</string>
+              <string>testcoin</string>
             </array>
           </dict>
         </array>

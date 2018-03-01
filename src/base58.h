@@ -272,9 +272,9 @@ class CBitcoinAddress : public CBase58Data
 public:
     enum
     {
-        PUBKEY_ADDRESS = 48, // Litecoin addresses start with L
+        PUBKEY_ADDRESS = 65, // Testcoin addresses start with T
         SCRIPT_ADDRESS = 5,
-        PUBKEY_ADDRESS_TEST = 111,
+        PUBKEY_ADDRESS_TEST = 127, // Testcoin test addresses start with t
         SCRIPT_ADDRESS_TEST = 196,
     };
 
