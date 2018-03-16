@@ -281,7 +281,7 @@ Clone the git repositories for testcoin and Gitian and then checkout the testcoi
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/testcoin-project/testcoin.git
+git clone https://github.com/8nyaha8/testcoin.git
 cd testcoin
 git checkout v${VERSION}
 cd ..
@@ -337,7 +337,7 @@ Output from `gbuild` will look something like
     remote: Total 35606 (delta 0), reused 0 (delta 0)
     Receiving objects: 100% (35606/35606), 26.52 MiB | 4.28 MiB/s, done.
     Resolving deltas: 100% (25724/25724), done.
-    From https://github.com/testcoin-project/testcoin
+    From https://github.com/8nyaha8/testcoin
     ... (new tags, new branch etc)
     --- Building for precise x86_64 ---
     Stopping target if it is up
@@ -394,5 +394,5 @@ Uploading signatures
 ---------------------
 
 After building and signing you can push your signatures (both the `.assert` and `.assert.sig` files) to the
-[testcoin/gitian.sigs](https://github.com/testcoin-project/gitian.sigs.ltc/) repository, or if that's not possible create a pull
+[testcoin/gitian.sigs](https://github.com/8nyaha8/gitian.sigs.ltc/) repository, or if that's not possible create a pull
 request. 

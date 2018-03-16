@@ -8,7 +8,7 @@ recommended to upgrade to this version as soon as possible.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/testcoin-project/testcoin/issues>
+  <https://github.com/8nyaha8/testcoin/issues>
 
 Upgrading and downgrading
 =========================

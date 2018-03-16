@@ -24,8 +24,8 @@ Build-Depends: debhelper,
  python
 Standards-Version: 3.9.2
 Homepage: https://www.testcoin.org/
-Vcs-Git: git://github.com/testcoin-project/testcoin.git
-Vcs-Browser: https://github.com/testcoin-project/testcoin
+Vcs-Git: git://github.com/8nyaha8/testcoin.git
+Vcs-Browser: https://github.com/8nyaha8/testcoin
 
 Package: testcoind
 Architecture: any

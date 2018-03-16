@@ -67,7 +67,7 @@ After exiting, you'll get a warning that the install is keg-only, which means it
 
 1. Clone the GitHub tree to get the source code and go into the directory.
 
-        git clone https://github.com/testcoin-project/testcoin.git
+        git clone https://github.com/8nyaha8/testcoin.git
         cd testcoin
 
 2.  Build testcoind:
