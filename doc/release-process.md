@@ -40,11 +40,14 @@ Release Process
 	wget 'http://www.openssl.org/source/openssl-1.0.1c.tar.gz'
 
  https://developer.apple.com/downloads/download.action?path=Developer_Tools/xcode_6.1.1/xcode_6.1.1.dmg
+	
 	wget 'http://zlib.net/zlib-1.2.6.tar.gz'
 
 Using a Mac, create a tarball for the 10.9 SDK and copy it to the inputs directory:
+
 	wget 'ftp://ftp.simplesystems.org/pub/libpng/png/src/libpng-1.5.9.tar.gz'
 	tar -C /Volumes/Xcode/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/ -czf MacOSX10.9.sdk.tar.gz MacOSX10.9.sdk
+	
 	wget 'http://fukuchi.org/works/qrencode/qrencode-3.2.0.tar.bz2'
 
 ### Optional: Seed the Gitian sources cache
@@ -54,7 +57,7 @@ Using a Mac, create a tarball for the 10.9 SDK and copy it to the inputs directo
 By default, Gitian will fetch source files as needed. For offline builds, they can be fetched ahead of time:
 
 	wget 'http://releases.qt-project.org/qt4/source/qt-everywhere-opensource-src-4.8.3.tar.gz'
-	make -C ../testcoin/depends download SOURCES_PATH=`pwd`/cache/common
+make -C ../testcoin/depends download SOURCES_PATH=`pwd`/cache/common
 
 Only missing files will be fetched, so this is safe to re-run for each build.
 
