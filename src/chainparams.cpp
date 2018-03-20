@@ -252,7 +252,7 @@ public:
         genesis.nBits = 0x207fffff;
         genesis.nNonce = 1;
         hashGenesisBlock = genesis.GetHash();
-        nDefaultPort = 19444;
+        nDefaultPort = 15999;
         assert(hashGenesisBlock == uint256("0x038ac67ad32a579dcaa17e08a2479ae8bcb0eaf9542a1b0ec6871349c9f5b44b"));
 
         vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
