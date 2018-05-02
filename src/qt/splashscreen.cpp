@@ -56,6 +56,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     pixPaint.setFont(QFont(font, 8*fontFactor));
     pixPaint.drawText(pixmap.width()-paddingRightCopyright,paddingTop+paddingCopyrightTop,copyrightText1);
     pixPaint.drawText(pixmap.width()-paddingRightCopyright,paddingTop+paddingCopyrightTop+titleCopyrightVSpace,copyrightText2);
+    pixPaint.drawText(pixmap.width()-paddingRightCopyright,paddingTop+paddingCopyrightTop+titleCopyrightVSpace+titleCopyrightVSpace,copyrightText3);
 
     // draw additional text if special network
     if(!titleAddText.isEmpty()) {
