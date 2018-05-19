@@ -36,7 +36,7 @@ from threading import RLock
 from threading import Thread
 import logging
 import copy
-import litecoin_scrypt
+import testcoin_scrypt
 from test_framework.siphash import siphash256
 
 BIP0031_VERSION = 60000
@@ -514,7 +514,7 @@ class CTransaction(object):
     def is_valid(self):
         self.calc_sha256()
         for tout in self.vout:
-            if tout.nValue < 0 or tout.nValue > 84000000 * COIN:
+            if tout.nValue < 0 or tout.nValue > 10000000 * COIN:
                 return False
         return True
 
@@ -582,7 +582,7 @@ class CBlockHeader(object):
             r += struct.pack("<I", self.nNonce)
             self.sha256 = uint256_from_str(hash256(r))
             self.hash = encode(hash256(r)[::-1], 'hex_codec').decode('ascii')
-            self.scrypt256 = uint256_from_str(litecoin_scrypt.getPoWHash(r))
+            self.scrypt256 = uint256_from_str(testcoin_scrypt.getPoWHash(r))
 
     def rehash(self):
         self.sha256 = None
@@ -1601,8 +1601,8 @@ class NodeConn(asyncore.dispatcher):
         b"blocktxn": msg_blocktxn
     }
     MAGIC_BYTES = {
-        "mainnet": b"\xfb\xc0\xb6\xdb",   # mainnet
-        "testnet3": b"\xfc\xc1\xb7\xdc",  # testnet3
+        "mainnet": b"\xf2\xca\xbf\xd2",   # mainnet
+        "testnet3": b"\xf8\xc4\xbf\xd8",  # testnet3
         "regtest": b"\xfa\xbf\xb5\xda",   # regtest
     }
 
@@ -1631,7 +1631,7 @@ class NodeConn(asyncore.dispatcher):
         vt.addrFrom.ip = "0.0.0.0"
         vt.addrFrom.port = 0
         self.send_message(vt, True)
-        print('MiniNode: Connecting to Litecoin Node IP # ' + dstaddr + ':' \
+        print('MiniNode: Connecting to Testcoin Node IP # ' + dstaddr + ':' \
             + str(dstport))
 
         try:
