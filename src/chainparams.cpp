@@ -118,7 +118,8 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0xbc01ce873e0100fdfb30a5e817296f8b0d6a2b9f0da3cd8e47ed47b0dc0313ae"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.clear()
+
+        vSeeds.clear();
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,65);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -137,8 +138,8 @@ public:
 
 	checkpointData = (CCheckpointData) {
 		boost::assign::map_list_of
-			(   0, uint256("0xc82444ae55ddda29fddd3334a786458aaf47af609b68c65b859df642423f7068"))
-			(1700, uint256("0x43706763c51e648277aa4310ec61b81c60b5c00af7e91347dfedb315dea76568")),
+			(   0, uint256S("0xc82444ae55ddda29fddd3334a786458aaf47af609b68c65b859df642423f7068"))
+			(1700, uint256S("0x43706763c51e648277aa4310ec61b81c60b5c00af7e91347dfedb315dea76568")),
 			1519130135, // * UNIX timestamp of last checkpoint block
 			1704,   // * total number of transactions between genesis and last checkpoint
 			//   (the tx=... number in the SetBestChain debug.log lines)
