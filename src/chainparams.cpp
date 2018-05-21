@@ -51,7 +51,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
     const char* pszTimestamp = "NY Times 26/Jan/2018 The U.S. May Back a Vietnam Coal Plant. Russia Is Already Helping.";
-    const CScript genesisOutputScript = CScript() << ParseHex("04f0801cbbf15f959de9e345888efb74222fa13844d5a428e33c52c0dbb8cb9c1a654bde53bd2415c4d7f54ba9b92beabc7c3074d5c1bd91b971072fec7cdfcd94") << OP_CHECKSIG;
+    const CScript genesisOutputScript = CScript() << ParseHex("04d429c63946b6f404b387c0ef6a49790d3c904e80004afc223b306b148ed52e2dbd412fc88d121c16ad9658a6a165300c14ac3cf8d111929c8123c93c5022cb87") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
@@ -196,7 +196,7 @@ public:
 
         genesis = CreateGenesisBlock(1516978813, 389064586, 0x1e0ffff0, 1, 88 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0xb5070bb4044bade3bd85a0ab1dc76499492881e195de25d41d6e5c88827db57c"));
+        assert(consensus.hashGenesisBlock == uint256S("0xf1ad49a505cd63a53d06f5961d9d63e7575743525bfad90d5b8770bdcaa55bac"));
         assert(genesis.hashMerkleRoot == uint256S("0xbc01ce873e0100fdfb30a5e817296f8b0d6a2b9f0da3cd8e47ed47b0dc0313ae"));
 
         vFixedSeeds.clear();
